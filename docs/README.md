@@ -6,14 +6,14 @@ Publish<br>
 Excellent mobile application for everyone.<br>
 
 ## Installation
-Download and click install.<br>
-
+Download and click install. To run application use following command:
+> python main.py
+    
 ## Sub modules
 www.link.com.<br>
 
 ## Usage
 Just enjoy.<br>
-
 
 ## Contributing
 

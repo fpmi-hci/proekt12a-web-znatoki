@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: "3.7"
+        python-version: ["3.7"]
 
     steps:
       - uses: actions/checkout@v3
@@ -22,3 +22,6 @@ jobs:
       - name: Running tests
         run: |
           pytest
+          
+      - name: Test Python running
+        run: python -c "import sys; print(sys.version)"

@@ -8,7 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+<<<<<<< HEAD
         python-version: ["3.7", "3.8", "3.9", "3.10"]
+=======
+        python-version: ["3.7"]
+>>>>>>> 35b14b889b28aaca929e619e3b9d397cddfc6631
 
     steps:
       - uses: actions/checkout@v3
@@ -16,11 +20,21 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 35b14b889b28aaca929e619e3b9d397cddfc6631
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
       - name: Running tests
         run: |
+<<<<<<< HEAD
           pytest
+=======
+          pytest
+          
+      - name: Test Python running
+        run: python -c "import sys; print(sys.version)"
+>>>>>>> 35b14b889b28aaca929e619e3b9d397cddfc6631

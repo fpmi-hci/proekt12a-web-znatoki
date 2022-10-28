@@ -15,6 +15,12 @@ www.link.com.<br>
 ## Usage
 Just enjoy.<br>
 
+<<<<<<< HEAD
+=======
+## CI/CD Description
+GitHub actions are triggered on pull requests and push actions. CI/CD consits of unit-tests running
+
+>>>>>>> 35b14b889b28aaca929e619e3b9d397cddfc6631
 ## Contributing
 
 * Artem Bislyuk

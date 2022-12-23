@@ -23,5 +23,5 @@ jobs:
         run: |
           pytest
           
-      - name: Test Python running
+      - name: Test running
         run: python -c "import sys; print(sys.version)"

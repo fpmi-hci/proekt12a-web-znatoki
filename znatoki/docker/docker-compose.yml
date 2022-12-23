@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  app:
+    image: 'znatoki'
+    build:
+      context: .
+    container_name: myznatokiapp1
+    ports: [8080:8080]
+    depends_on:
+      - db
+      - redis
+  db:
+    image: 'postgres'
+    container_name: main-postgres1
+    ports: [5432:5432]
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+  redis:
+    image: 'redis'
+    container_name: 'redis1'
